@@ -8,8 +8,8 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 =#
 
 function sum_of_multiples(limit::Int)
-	return sum([i for i in 1:limit if i%3==0||i%5==0])
+	return sum([num for num in 1:limit if num%3==0||num%5==0])
 end
 
-result = sum_of_multiples(999)
-println(result)
+sum_of_multiples = summe(999)
+println(sum_of_multiples)

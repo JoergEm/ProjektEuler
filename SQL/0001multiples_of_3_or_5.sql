@@ -11,13 +11,13 @@
  */
 
 
-WITH RECURSIVE Numbers AS (
+WITH RECURSIVE num AS (
     SELECT 1 AS a
     UNION ALL
     SELECT a + 1
-    FROM Numbers
+    FROM num
     WHERE CAST(a AS UNSIGNED) < 999
 )
 SELECT SUM(a) AS sum_of_multiples
-FROM Numbers
+FROM num
 WHERE a % 3 = 0 OR a % 5 = 0;
