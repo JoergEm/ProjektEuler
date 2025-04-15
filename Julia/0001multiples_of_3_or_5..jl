@@ -7,7 +7,7 @@ This program is WITHOUT ANY WARRANTY; without even the implied
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 =#
 
-function sum_of_multiples(limit::Int)
+function summe(limit::Int)
 	return sum([num for num in 1:limit if num%3==0||num%5==0])
 end
 
