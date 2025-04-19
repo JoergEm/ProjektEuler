@@ -1,0 +1,27 @@
+/* 
+ *
+ * openjdk 21.0.6 2025-01-21 LTS
+ * multiples_of_3_or_5.java
+ * 
+ *
+ * Copyright 2025 @GitHub JoergEm
+ * 
+ * This program is WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * 
+ * 
+ */
+
+
+public class multiples_of_3_or_5 {
+
+    public static void main (String[] args) {
+        int sum = 0;
+        for (int i = 0; i < 1000; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                sum += i;
+            }
+        }
+        System.out.println(sum);	
+    }
+}
