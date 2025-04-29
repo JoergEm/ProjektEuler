@@ -16,12 +16,12 @@
 public class _0001multiples_of_3_or_5 {
 
     public static void main (String[] args) {
-        int sum = 0;
+        int summe = 0;
         for (int num = 0; num < 1000; num++) {
             if (num % 3 == 0 || num % 5 == 0) {
-                sum += num;
+                summe += num;
             }
         }
-        System.out.println(sum);	
+        System.out.println(summe);	
     }
 }

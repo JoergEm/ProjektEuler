@@ -13,9 +13,9 @@
 
 
 def main(args: Array[String]): Unit = {
-  val sum = (1 until 1000)
-    .filter(num => num % 3 == 0 || num % 5 == 0)
+  val summe = (1 until 1000)
+    .filter(nummer => nummer % 3 == 0 || nummer % 5 == 0)
     .sum
 
-    println(sum)
+    println(summe)
 }

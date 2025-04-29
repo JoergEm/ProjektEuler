@@ -8,8 +8,8 @@
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 
-num <- 1:999
+nummer <- 1:999
 
-sum_of_multiples <- sum(num[num %% 3 == 0 | num %% 5 == 0])
+summe <- sum(nummer[nummer %% 3 == 0 | nummer %% 5 == 0])
 
-print(sum_of_multiples)
+print(summe)

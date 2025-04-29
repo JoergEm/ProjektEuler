@@ -8,8 +8,8 @@
 ;; This program is WITHOUT ANY WARRANTY; without even the implied
 ;; warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ;; 
-(defn summe [num]
-  (reduce + (range num 1000 num) ) )
+(defn summe [nummer]
+  (reduce + (range nummer 1000 nummer) ) )
 (defn sum_of_multiples []
   (- (+ (summe 3) (summe 5) ) (summe 15) ) )
 (println (sum_of_multiples) )
