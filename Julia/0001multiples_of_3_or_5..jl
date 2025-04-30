@@ -7,9 +7,8 @@ This program is WITHOUT ANY WARRANTY; without even the implied
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 =#
 
-function summe(limit::Int)
-	return sum([num for num in 1:limit if num%3==0||num%5==0])
+function summe()
+	return sum([nummer for nummer in 1:999 if nummer%3==0||nummer%5==0])
 end
 
-sum_of_multiples = summe(999)
-println(sum_of_multiples)
+println(summe())
