@@ -1,3 +1,15 @@
+/*
+ * Terraform v1.9.8
+ * 0001multiples_of_3_or_5.tf
+ * 
+ * Copyright 2025 @GitHub JoergEm
+ * 
+ * This program is WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * 
+ * 
+ */
+
 provider "null" {}
 
 locals {
