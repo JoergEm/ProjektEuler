@@ -8,7 +8,7 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 =#
 
 function summe()
-	return sum([nummer for nummer in 1:999 if nummer%3==0||nummer%5==0])
+	return sum([nummer for nummer in 1:999 if nummer%3 == 0 || nummer%5 == 0])
 end
 
 println(summe())

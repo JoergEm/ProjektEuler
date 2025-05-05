@@ -12,12 +12,12 @@
 
 
 WITH RECURSIVE num AS (
-    SELECT 1 AS a
+    SELECT 1 AS nummer
     UNION ALL
-    SELECT a + 1
+    SELECT nummer + 1
     FROM num
     WHERE CAST(a AS UNSIGNED) < 999
 )
-SELECT SUM(a) AS sum_of_multiples
+SELECT SUM(a) AS summe
 FROM num
-WHERE a % 3 = 0 OR a % 5 = 0;
+WHERE nummer % 3 = 0 OR nummer % 5 = 0;

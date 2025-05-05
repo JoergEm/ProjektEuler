@@ -1,4 +1,5 @@
 //
+// https://quantum.microsoft.com/en-us/tools/quantum-coding
 // _0001multiplesof3or5.qs
 // 
 // Copyright 2025 @GitHub JoergEm

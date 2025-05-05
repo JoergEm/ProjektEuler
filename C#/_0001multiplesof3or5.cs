@@ -1,5 +1,5 @@
 /* 
- * .NET VERSION
+ * .NET VERSION 7.0.410
  * _0001multiplesof3or5.cs
  * 
  * Copyright 2025 @GitHub JoergEm
@@ -9,6 +9,7 @@
  * 
  * 
  */
+
 using System;
 
 class _0001multiplesof3or5

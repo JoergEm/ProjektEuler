@@ -1,5 +1,6 @@
 /*
- * ProjectEuler.kt
+ * Kotlin 2.1.20
+ * 0001multiples_of_3_or_5.kt
  *
  * Copyright 2025 @GitHub JoergEm
  *

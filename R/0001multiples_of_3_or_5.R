@@ -10,6 +10,6 @@
 
 nummer <- 1:999
 
-summe <- sum(nummer[nummer %% 3 == 0 | nummer %% 5 == 0])
+summe  <- sum(nummer[nummer %% 3 == 0 | nummer %% 5 == 0])
 
 print(summe)

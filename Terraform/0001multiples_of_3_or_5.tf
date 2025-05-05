@@ -7,7 +7,6 @@
  * This program is WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * 
- * 
  */
 
 provider "null" {}
@@ -18,6 +17,6 @@ locals {
   summe = sum(local.multiples_of_3_or_5)
 }
 
-output "Summe" {
+output "Summe: " {
   value = local.summe
 }

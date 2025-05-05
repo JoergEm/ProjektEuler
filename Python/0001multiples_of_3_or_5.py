@@ -10,7 +10,7 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 """
 
 
-print(sum(nummer for nummer in range(1000) if nummer % 3 == 0 or nummer % 5 == 0))
+print(sum(nummer for nummer in range(1000) if nummer % 3 == 0 or nummer % 5 == 0) )
 
 
 def main(args):
