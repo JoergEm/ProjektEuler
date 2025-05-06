@@ -1,5 +1,5 @@
 
-﻿(*
+(*
 .NET VERSION 7.0.410
 0001multiples_of_3_or_5.fs
 Copyright 2025 @GitHub JoergEm
