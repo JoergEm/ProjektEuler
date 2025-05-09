@@ -1,0 +1,42 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[DynamicModuleBox[{Set[Typeset`querydata$$,
+Association["query" -> "summe = Total[Select[Range[999], Mod[#, 3] == 0 || Mod[#, 5] == 0 &]];",
+"assumptions" -> {},"parse" -> Defer[CompoundExpression[Set[summe,Total[Select[Range[
+999],Function[Or[Equal[Mod[Slot[1],3],0],Equal[Mod[Slot[1],5],0]]]]]],Null]],"inputpredictions" -> {},
+"otherpredictions" -> {},"allassumptions" -> {},"summarizeassumptions" -> FrontEnd`SuppressEvaluationHash[
+Automatic],"summarizepredictions" -> FrontEnd`SuppressEvaluationHash[True]]],Set[
+Typeset`update$$,FrontEnd`SuppressEvaluationHash[1]]},DynamicBox[ToBoxes[AlphaIntegration`NaturalLanguageInputBoxes[
+1,Typeset`querydata$$,Typeset`update$$],StandardForm],TrackedSymbols -> {}],RuleDelayed[
+DynamicModuleValues,{}],BaseStyle -> {Deployed -> True},ExpressionUUID -> "f7a9a34c-3761-4f2b-884a-705e541ec038"]],
+"DeployedNLInput",PrivateCellOptions -> {"CellSettings" -> {"HideDetails" -> FrontEnd`SuppressEvaluationHash[
+False]}},ExpressionUUID -> "20787806-a338-4550-aa58-70ca2d7691b8"],Cell[
+BoxData[
+RowBox[{RowBox[{RowBox[{"summe"," ","="," ",RowBox[{"Total","[",RowBox[{"Select","[",RowBox[
+{RowBox[{"Range","[","999","]"}],","," ",RowBox[{RowBox[{"Or","[",RowBox[{RowBox[
+{RowBox[{"Mod","[",RowBox[{"#1",","," ","3"}],"]"}]," ","=="," ","0"}],","," ",RowBox[
+{RowBox[{"Mod","[",RowBox[{"#1",","," ","5"}],"]"}]," ","=="," ","0"}]}],"]"}]," ","&"}]}]," ","]"}],"]"}]}],";"}]," "}]],
+"DeployedWLInput",CellAutoOverwrite -> True,GeneratedCell -> True,CellLabel -> "In[15]:=",
+PrivateCellOptions -> {"CellSettings" -> {"UsageTags" -> {{"Set",1},{"Total",1},{"Select",1},{"Range",1},{"Function",1},{"Or",1},{"Equal",1},{"Mod",1},{"Slot",1},{"Null",1}}}},
+ExpressionUUID -> "dc769c59-410e-447c-8a76-1a19cbaae3c9"]},Open],ExpressionUUID -> "850d1ca7-485a-4250-9d8a-3e198ba08498"],Cell[
+CellGroupData[
+{Cell[
+BoxData[DynamicModuleBox[{Set[Typeset`querydata$$,Association["query" -> "summe",
+"assumptions" -> {},"parse" -> Defer[summe],"inputpredictions" -> {},"otherpredictions" -> {},
+"allassumptions" -> {XMLElement["assumptions",{"count" -> "1"},{XMLElement["assumption",
+{"type" -> "Clash","word" -> "summe","template" -> "Assuming \"summe\" is referring to math${separator}Use as ${desc} instead","count" -> "2","pulldown" -> "false","default" -> "{\"C\", \"summe\"} -> {\"SessionVariable\", \"dflt\"}"},
+{XMLElement["value",{"name" -> "SessionVariable","desc" -> "referring to math","input" -> "{\"C\", \"summe\"} -> {\"SessionVariable\"}"},
+{}],XMLElement["value",{"name" -> "Person","desc" -> "a person","input" -> "{\"C\", \"summe\"} -> {\"Person\"}"},
+{}]}]}]},"summarizeassumptions" -> FrontEnd`SuppressEvaluationHash[Automatic],"summarizepredictions" -> FrontEnd`SuppressEvaluationHash[
+True]]],Set[Typeset`update$$,FrontEnd`SuppressEvaluationHash[1]]},DynamicBox[ToBoxes[
+AlphaIntegration`NaturalLanguageInputBoxes[1,Typeset`querydata$$,Typeset`update$$],
+StandardForm],TrackedSymbols -> {}],RuleDelayed[DynamicModuleValues,{}],BaseStyle -> {Deployed -> True},
+ExpressionUUID -> "5279a454-07cf-4db3-a7dc-d284dc172dbb"]],"DeployedNLInput",PrivateCellOptions -> {"CellSettings" -> {"HideDetails" -> FrontEnd`SuppressEvaluationHash[
+False]}},ExpressionUUID -> "b2a27754-c0aa-43e9-8bb5-f6ad466a7c34"],Cell[
+BoxData[
+"summe"],"DeployedWLInput",CellAutoOverwrite -> True,GeneratedCell -> True,CellLabel -> "In[16]:=",
+ExpressionUUID -> "7ed69058-5d29-4f45-aa46-e172b8240e82"],Cell[
+BoxData[FormBox["233168",
+TraditionalForm],TraditionalForm],"Output",CellLabel -> "Out[16]= ",ExpressionUUID -> "7b3b47f6-45c9-43d3-8505-5621b55baa94"]},
+Open],ExpressionUUID -> "d2af8dc5-1dae-4e7e-b8ce-e196ee06764d"]},StyleDefinitions -> "WolframAlphaNotebook.nb",
+FrontEndVersion -> "14.2 for Wolfram Cloud 1.72 (April 27, 2025)"]
