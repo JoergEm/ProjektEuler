@@ -13,7 +13,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
 
-spark = SparkSession.builder.appName("SumDivisibleBy3Or5").getOrCreate()
+spark = SparkSession.builder.appName("0001multiples_of_3_or_5").getOrCreate()
 numbers = spark.range(1000).toDF("nummer")
 filtered = numbers.filter((col("nummer") % 3 == 0) | (col("nummer") % 5 == 0))
 summe = filtered.groupBy().sum("nummer").collect()[0][0]

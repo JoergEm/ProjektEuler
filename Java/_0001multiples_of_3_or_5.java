@@ -1,6 +1,6 @@
 /* 
  * openjdk 21.0.6 2025-01-21 LTS
- * 0001multiples_of_3_or_5.java
+ * _0001multiples_of_3_or_5.java
  * 
  *
  * Copyright 2025 @GitHub JoergEm
