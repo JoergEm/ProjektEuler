@@ -1,7 +1,7 @@
 %{
 % octave version 8.4.0
 % 0001multiples_of_3_or_5.m
-% Copyright 2025 @GitHub
+% Copyright 2025 @GitHub JoergEm
 %
 % This program is WITHOUT ANY WARRANTY; without even the implied
 % warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
