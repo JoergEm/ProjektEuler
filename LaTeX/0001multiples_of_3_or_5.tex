@@ -1,0 +1,84 @@
+%
+% pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)
+% 0001multiples_of_3_or_5.tex
+%
+% Copyright 2026 @GitHub JoergEm
+%
+% This program is WITHOUT ANY WARRANTY; without even the implied
+% warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+%
+
+\documentclass{article}
+\usepackage{siunitx}
+\ExplSyntaxOn
+
+\NewDocumentCommand{\setvariable}{mmm}
+ {
+  \prop_gclear_new:c { g_variabeln_var_#1_prop }
+  \prop_gput:cnn { g_variabeln_var_#1_prop } { value } { #2 }
+  \prop_gput:cnn { g_variabeln_var_#1_prop } { unit } { #3 }
+ }
+
+\NewDocumentCommand{\printvariable}{sm}
+ {
+  \IfBooleanTF{#1}
+   { \num { \__variabeln_get:nn { #2 } { value } } }
+   { \exp_args:Nnx \SI { \__variabeln_get:nn { #2 } { value } }
+       { \__variabeln_get:nn { #2 } { unit } } }
+ }
+
+\DeclareExpandableDocumentCommand{\getvalue}{m}
+ { \__variabeln_get:nn { #1 } { value } }
+
+\cs_new:Npn \__variabeln_get:nn #1 #2
+ { \prop_item:cn { g_variabeln_var_#1_prop } { #2 } }
+
+\cs_set_eq:NN \fpeval \fp_eval:n
+
+\cs_new:Npn \__euler_sum:nn #1 #2
+ {
+  \fp_eval:n
+   {
+    floor( (#1 - 1) / #2 ) * ( floor( (#1 - 1) / #2 ) + 1 ) / 2 * #2
+   }
+ }
+
+\NewDocumentCommand{\multiplesofthreeorfive}{mm}
+ { \__euler_sum:nn { #1 } { #2 } }
+
+\ExplSyntaxOff
+
+\setvariable{nummer}{1000}{}
+
+\begin{document}
+
+\section*{Project Euler -- Problem 1}
+
+Gesucht ist die Summe aller Vielfachen von~3 oder~5 unterhalb von
+\printvariable*{nummer}.
+
+\bigskip
+\noindent
+Die Gaußsche Summenformel liefert die Summe aller Vielfachen von $k$
+unterhalb von $N$:
+\[
+  S(k,N)
+  = \left\lfloor\frac{N-1}{k}\right\rfloor
+    \cdot \frac{\left\lfloor\frac{N-1}{k}\right\rfloor + 1}{2}
+    \cdot k
+\]
+
+\bigskip
+\noindent
+\begin{tabular}{@{}ll@{}}
+  \textbf{Vielfache von 3:}                    & $\multiplesofthreeorfive{\getvalue{nummer}}{3}$  \\[4pt]
+  \textbf{Vielfache von 5:}                    & $\multiplesofthreeorfive{\getvalue{nummer}}{5}$  \\[4pt]
+  \textbf{Vielfache von 15 (Doppelzählungen):} & $\multiplesofthreeorfive{\getvalue{nummer}}{15}$ \\[4pt]
+  \textbf{Summe:}                              & $\fpeval{
+    \multiplesofthreeorfive{\getvalue{nummer}}{3}
+    + \multiplesofthreeorfive{\getvalue{nummer}}{5}
+    - \multiplesofthreeorfive{\getvalue{nummer}}{15}
+  }$                                                                                               \\
+\end{tabular}
+
+\end{document}
